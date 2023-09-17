@@ -1,0 +1,29 @@
+<world>
+<properties>
+defaultSize height='10' width='10'/>
+</properties>
+<objects>
+<beeper x='1' y='10' num='1'/>
+<beeper x='1' y='9' num='1'/>
+<beeper x='1' y='8' num='1'/>
+<beeper x='1' y='7' num='1'/>
+<beeper x='1' y='6' num='1'/>
+<beeper x='1' y='5' num='2'/>
+<beeper x='1' y='4' num='1'/>
+<beeper x='1' y='3' num='1'/>
+<beeper x='1' y='2' num='1'/>
+<beeper x='1' y='1' num='1'/>
+<beeper x='2' y='10' num='1'/>
+<beeper x='2' y='9' num='1'/>
+<beeper x='2' y='8' num='2'/>
+<beeper x='2' y='7' num='2'/>
+<beeper x='2' y='6' num='2'/>
+<beeper x='2' y='5' num='1'/>
+<beeper x='2' y='4' num='1'/>
+<beeper x='2' y='3' num='1'/>
+<beeper x='2' y='2' num='1'/>
+<beeper x='2' y='1' num='1'/>
+<beeper x='3' y='10' num='69'/>
+<beeper x='4' y='10' num='11'/>
+</objects>
+</world>
