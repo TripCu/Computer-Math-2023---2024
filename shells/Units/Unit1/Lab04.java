@@ -48,8 +48,12 @@ import edu.fcps.karel2.Robot;
       takeTheField(e);
       takeTheField(f);
       
-      coachpostion(coach);
-      
+      int k;
+      for(k=1; k<=6; k++)
+      {
+        coach.move();
+         
+      }
       a.move();
       a.turnLeft();
       a.move();
