@@ -1,6 +1,6 @@
 //Trip 8-29-2023
-   import edu.fcps.karel2.Display;
-   import edu.fcps.karel2.Robot; 
+import edu.fcps.karel2.Display;
+import edu.fcps.karel2.Robot; 
 
    public class Lab00
    { 
@@ -12,8 +12,7 @@
 
       
          Robot karel = new Robot();      
-         import edu.fcps.karel2.Display;
-         import edu.fcps.karel2.Robot; 
+
 
    public class Lab00
    { 
