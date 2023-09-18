@@ -52,10 +52,31 @@
          move();
          putBeeper();
          move();
-      
+         
+        }
+        
+         public void turnAround2()
+         {
+            turnLeft();
+            turnLeft();
+            turnLeft();
+         
+         
+         }
+         
+          public void move2()
+         {
+             move();
+             move();
+         
+         
+         }
 
 
+
+
+
       
-      }
+      
 
     }   
