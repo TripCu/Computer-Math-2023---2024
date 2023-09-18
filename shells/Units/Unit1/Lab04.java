@@ -67,15 +67,22 @@ import edu.fcps.karel2.Robot;
       e.move2();
       e.turnRight();
 
-      f.move2();
-      f.move2();
+      d.move2();
+      d.move2();
       
+      d.move();
+      d.turnLeft();
+      d.move();
+      d.turnLeft();
+      d.turnLeft();
+      
+      //goalie moves to goal
+      f.move2();
       f.move();
       f.turnLeft();
-      f.move();
-      f.turnLeft();
-      f.turnLeft();
-      
+      f.move2();
+      f.turnLeft();      
+      f.turnLeft();  
       
       
       }
