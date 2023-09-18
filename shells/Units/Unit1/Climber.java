@@ -16,7 +16,7 @@ public class Climber extends Athlete
       super(8, 1, Display.NORTH, 1);
    }
 
-   
+    
    public void climbLeftdown()
    {
       turnLeft();
