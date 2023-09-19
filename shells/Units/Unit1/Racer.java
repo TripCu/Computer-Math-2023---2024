@@ -1,3 +1,6 @@
+import edu.fcps.karel2.Display;
+import edu.fcps.karel2.Robot; 
+
 public class Racer extends Athlete
  {
   public Racer(int y)
@@ -19,18 +22,17 @@ Display.INFINITY);
  }
  public void put(int n)
  {
- __________________
- __________________
+
  }
  public void pick(int n)
  {
- __________________
- __________________
+
  }
  public void shuttle(int spaces,
 int beepers)
 
-41 {
-42
-43
-44 }
+{
+
+}
+
+}
