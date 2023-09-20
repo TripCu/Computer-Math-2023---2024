@@ -10,11 +10,24 @@ public class Racer extends Athlete
    }
    public void jumpRight()
    {
-   
+      turnLeft();
+      move();
+      turnRight();
+      move();
+      turnRight();
+      move();
    }
    public void jumpLeft()
    {
+      turnLeft();
+      move();
+      turnLeft();
+      move();
+      turnLeft();
+      move();
+      turnRight();
    }
+
    public void sprint(int n)
    {
       for(int k=1; k <= n; k++)

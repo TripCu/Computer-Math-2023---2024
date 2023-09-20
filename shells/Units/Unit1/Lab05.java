@@ -16,12 +16,14 @@ public class Lab05
    
    public static void main(String[] args)
    {  Display.openWorld("maps/shuttle.map");
-      Display.setSize(10, 10);
+      Display.setSize(10,10); 
       Display.setSpeed(5);
       
       Racer mary = new Racer(7);
-   
-      
-   
+      Racer b = new Racer(4);
+      Racer c = new Racer(1);
+      b.move();
+      b.jumpRight();
+      b.turnLeft();
    }
 }
