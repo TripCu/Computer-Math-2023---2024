@@ -4,14 +4,23 @@ import edu.fcps.karel2.Robot;
   
 public class Lab05
 {
+   public static void coachpostion(Athlete arg)
+   {
+      arg.move();
+      arg.move();
+      arg.move();
+      arg.move();
+      arg.move();
+      arg.move();
+   }
    
    public static void main(String[] args)
-   {  Display.openWorld("shuttle/shuttle.map");
+   {  Display.openWorld("maps/shuttle.map");
       Display.setSize(10, 10);
       Display.setSpeed(5);
       
-      Racer mary = new Racer();
-
+      Racer mary = new Racer(7);
+   
       
    
    }

@@ -10,7 +10,7 @@ public class Racer extends Athlete
    }
    public void jumpRight()
    {
-   //pseudocode: tL, m, tR, m, tR, m, tL
+   
    }
    public void jumpLeft()
    {
