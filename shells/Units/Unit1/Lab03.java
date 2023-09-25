@@ -16,15 +16,15 @@ public class Lab03
      
      
 
-      a.climbright();
+      a.climbrightV1();
 
       a.climbUpLeft();
       
-      a.climbright();
+      a.climbrightV1();
       
       a.climbUpLeft(); 
       
-      a.climbright();
+      a.climbrightV1();
       
       a.climbUpLeft();
       

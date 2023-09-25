@@ -25,7 +25,7 @@ public class Climber extends Athlete
       
    }
    
-     public void climbright()
+     public void climbrightV1()
    {  turnRight();
       move();
    }
