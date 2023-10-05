@@ -25,6 +25,8 @@ public class Lab04
       arg.move();
       arg.move();
       arg.move();
+      arg.turnRight();
+      arg.move();
    }
 
    public static void main(String[] args)
@@ -48,14 +50,10 @@ public class Lab04
       takeTheField(e);
       takeTheField(f);
       
-      int k;
-      for(k=1; k<=6; k++)
-      {
-         coach.move();
-         
-      }
-      coach.turnRight();
-      coach.move();
+   
+   coachpostion(coach);
+   
+   
       for (int i = 0; i < 2; i++) {
          a.move();
          a.turnLeft();
