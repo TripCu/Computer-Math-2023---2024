@@ -3,7 +3,7 @@ import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;  
   
   
-  public class Lab04
+public class Lab04
 {
    public static void takeTheField(Athlete arg)
    {
@@ -15,7 +15,7 @@ import edu.fcps.karel2.Robot;
       arg.turnRight();
       arg.move();
       arg.move();
-        }
+   }
    
    public static void coachpostion(Athlete arg)
    {
@@ -51,43 +51,55 @@ import edu.fcps.karel2.Robot;
       int k;
       for(k=1; k<=6; k++)
       {
-        coach.move();
+         coach.move();
          
       }
-      a.move();
-      a.turnLeft();
-      a.move();
-      a.turnLeft();
+      coach.turnRight();
+      coach.move();
+      for (int i = 0; i < 2; i++) {
+         a.move();
+         a.turnLeft();
+      }
       a.turnLeft();
       
-      b.move2();
+      
+      for (int i = 0; i < 2; i++) {
+         b.move();
+      }
       b.turnRight();
       
-      c.move2();
-      c.move();
+      
+      for (int i = 0; i < 3; i++) {
+         c.move();
+      }
       c.turnRight();
       
-      e.move2();
-      e.move2();
+      for (int i = 0; i < 4; i++) {
+         e.move();
+      }
       e.turnRight();
-
-      d.move2();
-      d.move2();
       
-      d.move();
+      for (int i = 0; i < 5; i++) {
+         d.move();
+      }
       d.turnLeft();
       d.move();
       d.turnLeft();
       d.turnLeft();
       
       //goalie moves to goal
-      f.move2();
-      f.move();
+      for (int i = 0; i < 3; i++) {
+         f.move();
+      }
+      
       f.turnLeft();
-      f.move2();
+      
+      for (int i = 0; i < 2; i++) {
+         f.move();
+      }
       f.turnLeft();      
       f.turnLeft();  
       
       
-      }
+   }
 }

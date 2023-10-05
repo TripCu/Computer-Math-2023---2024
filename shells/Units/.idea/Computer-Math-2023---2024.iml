@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file:///production/Computer-Math-2023---2024" />
+    <output-test url="file:///test/Computer-Math-2023---2024" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../.." />
+    <content url="jar://$MODULE_DIR$/Setup files/karel2_c.jar!/" />
+    <content url="jar://$MODULE_DIR$/Setup files/xercesImpl.jar!/" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="xercesImpl" level="application" />
+  </component>
+</module>

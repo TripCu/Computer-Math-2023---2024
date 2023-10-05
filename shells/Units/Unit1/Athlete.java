@@ -64,13 +64,7 @@
          
          }
          
-          public void move2()
-         {
-             move();
-             move();
-         
-         
-         }
+
 
 
 
