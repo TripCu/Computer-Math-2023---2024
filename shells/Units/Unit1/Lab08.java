@@ -16,7 +16,7 @@
             }
             else
             {
-               arg.jumpRight();
+               arg.jumpLeft();
             }
          }
       }
@@ -25,7 +25,7 @@
          String filename = JOptionPane.showInputDialog("What robot world?");
          String type = JOptionPane.showInputDialog("What type of racer?");
       
-       Display.openWorld("maps/"+filename+".map");
+         Display.openWorld("maps/"+filename+".map");
          Display.setSize(18, 16);
          Display.setSpeed(10);
       
