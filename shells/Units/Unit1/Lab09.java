@@ -9,7 +9,7 @@ public class Lab09 {
         // Initialize the world and robot
         Display.openWorld("maps/" + filename + ".map");
         Display.setSize(10, 10);
-        Display.setSpeed(5);
+        Display.setSpeed(15);
    
         Athlete jeff = new Athlete(1, 1, Display.EAST, 0); 
 
