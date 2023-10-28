@@ -2,7 +2,7 @@
 import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 import javax.swing.JOptionPane;
-public class Lab06v2
+public class Lab06p2
 {
    public static void main(String[] args) 
    {
@@ -11,15 +11,15 @@ public class Lab06v2
       Display.setSize(10, 10);
       Display.setSpeed(5);
       
-      task_07(); //go to the beeper or the wall. Count and report the number of steps you took.
-      task_08(); //go until you are next to another robot, then put all your beepers down.
-      task_09(); //put down 5 different piles with 4 beepers in each pile. Use definite loops.
-      task_10(); //fill in gaps with a beeper. Stop when you reach a wall.
-      task_11(); //while there is a wall to your right, put down one beeper at each step
-      task_12(); //go until there is a wall to your right and you are standing on a beeper
+      task_07(); 
+      task_08(); 
+      task_09(); 
+      task_10(); 
+      task_11(); 
+      task_12(); 
    }
    public static void task_07()	
-   {  //go to the beeper or the wall. Count and report the number of steps you took.
+   {  
       Robot r7 = new Robot(1, 1, Display.EAST, 0);
       int steps = 0;
       while(r7.frontIsClear() && !r7.nextToABeeper())
