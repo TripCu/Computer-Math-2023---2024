@@ -11,51 +11,51 @@ public class Lab09 {
         Display.setSize(10, 10);
         Display.setSpeed(5);
    
-        Athlete robo = new Athlete(1, 1, Display.EAST, 0); 
+        Athlete jeff = new Athlete(1, 1, Display.EAST, 0); 
 
         // Initialize two piles for beepers
         int pile1 = 0;
         int pile2 = 0;
       
         // Move the robot until it finds a beeper
-        while (!robo.nextToABeeper()) {
-            robo.move();
+        while (!jeff.nextToABeeper()) {
+            jeff.move();
         }
       
         // Perform a series of actions four times
         for (int a = 1; a <= 4; a++) {
             // Collect beepers into pile1 and put beepers from pile2
-            while (robo.nextToABeeper()) {
-                robo.pickBeeper();
+            while (jeff.nextToABeeper()) {
+                jeff.pickBeeper();
                 pile1++;
             }
             while (pile2 > 0) {
-                robo.putBeeper();
+                jeff.putBeeper();
                 pile2--;
             }
       
             // Move the robot forward
-            robo.move();
+            jeff.move();
            
             // Collect beepers into pile2 and put beepers from pile1
-            while (robo.nextToABeeper()) {
-                robo.pickBeeper();
+            while (jeff.nextToABeeper()) {
+                jeff.pickBeeper();
                 pile2++;
             }
             while (pile1 > 0) {
-                robo.putBeeper();
+                jeff.putBeeper();
                 pile1--;
             }
             
             // Move the robot forward for the next iteration
-            robo.move();
+            jeff.move();
         }
       
         // Turn the robot around and move it to the starting position
-        robo.turnAround();
-        while (robo.frontIsClear()) {
-            robo.move();
+        jeff.turnAround();
+        while (jeff.frontIsClear()) {
+            jeff.move();
         }
-        robo.turnAround();
+        jeff.turnAround();
    }
 }
