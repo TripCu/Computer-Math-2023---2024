@@ -25,11 +25,11 @@ public class Lab10 {
       Display.setSize(10, 10);
       Display.setSpeed(5);
    
-      Athlete ghengis = new Athlete(1, 1, Display.NORTH, 0); 
+      Athlete mazerunner = new Athlete(1, 1, Display.NORTH, 0); 
       
-      ghengis.turnRight();
-      while (!ghengis.nextToABeeper()) {
-         followWallsRight(ghengis);
+      mazerunner.turnRight();
+      while (!mazerunner.nextToABeeper()) {
+         followWallsRight(mazerunner);
       }
    }
 }
