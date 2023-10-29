@@ -1,42 +1,43 @@
-//Thomas G 10/24/23
 import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
-import javax.swing.JOptionPane;
-public class Lab10
-{ 
-   public static void followWallsRight(Athlete arg)
-   {
-      if(!arg.rightIsClear())
-      {
-         if(arg.frontIsClear())
-         {
-            arg.move();
-         }
-         else
-         {
-            arg.turnLeft();
-         }
-      }
-      else
-      {
-         arg.turnRight();
-         arg.move();
+
+public class Carpeter extends Robot implements Workable {
+
+   // Constructors
+   public Carpeter(int x, int y) {
+      super(x, y, Display.EAST, Display.INFINITY);
+   }
+
+   public Carpeter() {
+      super(2, 2, Display.EAST, Display.INFINITY);
+   }
+
+   // Method to place a beeper in the current corner until a beeper is present
+   public void workCorner() {
+      while (!nextToABeeper()) {
+         putBeeper();
       }
    }
-   public static void main(String[] args)
-   {
-      String filename = JOptionPane.showInputDialog("What robot world?");
-         
-      Display.openWorld("maps/"+filename+".map");
-      Display.setSize(10, 10);
-      Display.setSpeed(5);
-   
-      Athlete ghengis = new Athlete (1, 1, Display.NORTH, 0); 
-      
-      ghengis.turnRight();
-      while(!ghengis.nextToABeeper())
-      {
-         followWallsRight(ghengis);
+
+   // Method to move one block and place a beeper until a beeper is present
+   public void moveOneBlock() {
+      move();
+      while (!nextToABeeper()) {
+         putBeeper();
+      }
+   }
+
+   // Method to turn the robot to the right
+   public void turnToTheRight() {
+      for (int i = 0; i < 3; i++) {
+         turnLeft();
+      }
+   }
+
+   // Method to turn the robot to face North
+   public void turnToTheNorth() {
+      if (!facingNorth()) {
+         turnLeft();
       }
    }
 }
