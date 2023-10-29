@@ -1,54 +1,42 @@
-// Trip Cubbison 9/8/23
-
-import edu.fcps.karel2.Display;
+//Thomas 8/31/23
 import edu.fcps.karel2.Robot;
-
+import edu.fcps.karel2.Display;
 public class StepClimber extends Climber
 {
    public StepClimber()
    {
       super();
-       
    }
-  
    public StepClimber(int x)
    {
-      super(8, 1, Display.NORTH, 1);
+      super(x);
    }
-
-    
-   public void climbrightV1()
-   {  turnRight();
-      move();
+   public void climbUpRight()
+   {
+   turnLeft();
+   move();
+   turnRight();
+   move();
    }
-
+   public void climbDownRight()
+   {
+   move();
+   turnRight();
+   move();
+   turnLeft();
+   }
    public void climbUpLeft()
    {
-      turnLeft();
-      move();
-      move();
+   turnRight();
+   move();
+   turnLeft();
+   move();
    }
-   
-   public void ClimbDownLeft()
-   {  move();
-      move();
-      turnLeft();
+   public void climbDownLeft()
+   {
+   move();
+   turnLeft();
+   move();
+   turnRight();
    }
-   
-   public void ClimbDownRight()
-   {  move();
-      move();
-      turnRight();
-      move();
-      turnLeft();
-   }
-
-   public void ClimbUpRight()  
-   { turnRight();
-      move();
-      move();
-      
-   }
-
-
 }

@@ -1,29 +1,30 @@
+//Thomas 9/20/23
 import edu.fcps.karel2.Display;
-import edu.fcps.karel2.Robot;  
-  
-  
+import edu.fcps.karel2.Robot;
+
 public class Lab05
-{
-   public static void coachpostion(Athlete arg)
+{ 
+   public static void runTheRace(Racer arg)
    {
-      arg.move();
-      arg.move();
-      arg.move();
-      arg.move();
-      arg.move();
+      arg.shuttle(2, 7);
+      arg.shuttle(4, 5);
+      arg.shuttle(6, 3);
       arg.move();
    }
-   
    public static void main(String[] args)
-   {  Display.openWorld("maps/shuttle.map");
-      Display.setSize(10,10); 
-      Display.setSpeed(5);
+   {
+      Display.openWorld("maps/shuttle.map");
+      Display.setSize(10, 10);
+      Display.setSpeed(15);
       
-      Racer mary = new Racer(7);
-      Racer b = new Racer(4);
-      Racer c = new Racer(1);
-      b.move();
-      b.jumpRight();
-      b.turnLeft();
+      Racer glorp = new Racer (1);
+      Racer blorp = new Racer (4);
+      Racer slorp = new Racer (7);
+   
+         runTheRace(glorp);
+         runTheRace(blorp);
+         runTheRace(slorp);
+         
    }
+
 }
