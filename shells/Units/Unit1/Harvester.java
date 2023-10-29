@@ -1,4 +1,3 @@
-	//Name______________________________ Date_____________
 import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 public class Harvester extends Robot implements Workable
@@ -28,9 +27,9 @@ public class Harvester extends Robot implements Workable
    }
    public void turnToTheRight()
    {
-      turnLeft();
-      turnLeft();
-      turnLeft();
+      for (int i = 0; i < 3; i++) {
+         turnLeft();
+      }
    }
    public void turnToTheNorth()
    {
