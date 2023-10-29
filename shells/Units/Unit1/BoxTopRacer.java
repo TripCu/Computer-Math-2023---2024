@@ -6,8 +6,8 @@ public class BoxTopRacer extends Racer {
         super(1);
     }
 
-    // Method to make the racer jump left
-    public void jumpLeft() {
+    // Method for the racer to perform a left jump
+    public void performLeftJump() {
         int up = 0;
         turnLeft();
         while (!rightIsClear()) {
@@ -26,8 +26,8 @@ public class BoxTopRacer extends Racer {
         turnLeft();
     }
 
-    // Method to make the racer jump right
-    public void jumpRight() {
+    // Method for the racer to perform a right jump
+    public void performRightJump() {
         turnRight();
         move();
         turnLeft();
@@ -37,38 +37,38 @@ public class BoxTopRacer extends Racer {
         turnRight();
     }
 
-    // Method to make the racer sprint a given number of spaces
+    // Method for the racer to sprint a given number of spaces
     public void sprint(int n) {
         for (int k = 1; k <= n; k++) {
             move();
         }
     }
 
-    // Method to make the racer pick a given number of beepers
-    public void pick(int n) {
+    // Method for the racer to pick a given number of beepers
+    public void pickBeepers(int n) {
         for (int k = 1; k <= n; k++) {
             pickBeeper();
         }
     }
 
-    // Method to make the racer put a given number of beepers
-    public void put(int n) {
+    // Method for the racer to put a given number of beepers
+    public void putBeepers(int n) {
         for (int k = 1; k <= n; k++) {
             putBeeper();
         }
     }
 
-    // Method to shuttle the racer forward, pick beepers, turn around, and put beepers
+    // Method for the racer to shuttle forward, pick beepers, turn around, and put beepers
     public void shuttle(int spaces, int beepers) {
         move();
-        jumpLeft();
+        performLeftJump();
         sprint(spaces);
-        pick(beepers);
+        pickBeepers(beepers);
         turnAround();
         sprint(spaces);
-        jumpRight();
+        performRightJump();
         move();
-        put(beepers);
+        putBeepers(beepers);
         turnAround();
     }
 }
