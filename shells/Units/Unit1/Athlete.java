@@ -60,15 +60,15 @@
             turnLeft();
             turnLeft();
             turnLeft();
-            
-              public void turnAround3()
+        }    
+        public void turnAround3()
          {
             turnLeft();
             turnLeft();
 
          
-         
          }
+      
          
 
 
