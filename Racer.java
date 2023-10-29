@@ -1,4 +1,4 @@
-//Thomas Gibbs 9/18/23
+
 import edu.fcps.karel2.Robot;
 import edu.fcps.karel2.Display;
 public class Racer extends Athlete
