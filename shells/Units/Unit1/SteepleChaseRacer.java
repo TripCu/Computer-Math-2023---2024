@@ -1,4 +1,3 @@
-//Thomas Gibbs 10/1/23
 import edu.fcps.karel2.Robot;
 import edu.fcps.karel2.Display;
 public class SteepleChaseRacer extends Racer
