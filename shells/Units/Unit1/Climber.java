@@ -49,6 +49,13 @@ public class Climber extends Athlete
       move();
       
    }
+      public void ClimbDownRightV1()
+   {  move();
+      move();
+      turnRight();
+      move();
+      turnLeft();
+   }
 
 
 }
