@@ -1,7 +1,7 @@
 import edu.fcps.Digit;
-public class One extends Digit
+public class One_1 extends Digit
 {
-   public One(int x, int y) 
+   public One_1(int x, int y) 
    {
       super(x, y);
    }
