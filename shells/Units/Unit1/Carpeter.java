@@ -1,10 +1,10 @@
-mport edu.fcps.karel2.Display;
+import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 
 public class Carpeter extends Robot implements Workable {
 
    // Constructors
-   public Carpeter(int x, y) {
+   public Carpeter(int x, int y) {
       super(x, y, Display.EAST, Display.INFINITY);
    }
 
@@ -41,4 +41,3 @@ public class Carpeter extends Robot implements Workable {
       }
    }
 }
-I've added comments to d
