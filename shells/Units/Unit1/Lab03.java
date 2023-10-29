@@ -6,7 +6,7 @@ import edu.fcps.karel2.Robot;
 public class Lab03
 { 
 
-   public static void MoveRight(Climber arg)
+   public static void MoveRight(ClimberV1 arg)
    {
       arg.move();
       arg.turnRight();
