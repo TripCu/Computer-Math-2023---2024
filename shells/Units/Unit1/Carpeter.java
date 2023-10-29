@@ -1,41 +1,44 @@
-import edu.fcps.karel2.Display;
+mport edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
-public class Carpeter extends Robot implements Workable
-{
-   public Carpeter(int x, int y)
-   {
+
+public class Carpeter extends Robot implements Workable {
+
+   // Constructors
+   public Carpeter(int x, y) {
       super(x, y, Display.EAST, Display.INFINITY);
    }
-   public Carpeter()
-   {
+
+   public Carpeter() {
       super(2, 2, Display.EAST, Display.INFINITY);
    }
-   public void workCorner()
-   {
-      while(!nextToABeeper())
-      {
+
+   // Method to place a beeper in the current corner until a beeper is present
+   public void workCorner() {
+      while (!nextToABeeper()) {
          putBeeper();
       }
    }
-   public void moveOneBlock()
-   {
+
+   // Method to move one block and place a beeper until a beeper is present
+   public void moveOneBlock() {
       move();
-      while(!nextToABeeper())
-      {
+      while (!nextToABeeper()) {
          putBeeper();
       }
    }
-   public void turnToTheRight()
-   {
+
+   // Method to turn the robot to the right
+   public void turnToTheRight() {
       for (int i = 0; i < 3; i++) {
          turnLeft();
       }
    }
-   public void turnToTheNorth()
-   {
-      if(!facingNorth())
-      {
+
+   // Method to turn the robot to face North
+   public void turnToTheNorth() {
+      if (!facingNorth()) {
          turnLeft();
       }
    }
 }
+I've added comments to d
