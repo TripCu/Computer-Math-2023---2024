@@ -4,24 +4,27 @@ import javax.swing.JOptionPane;
 
 public class Lab09 {
    public static void main(String[] args) {
+      // Prompt the user for the robot world filename
       String filename = JOptionPane.showInputDialog("What robot world?");
-         
+      
+      // Initialize the Karel world
       Display.openWorld("maps/" + filename + ".map");
       Display.setSize(10, 10);
       Display.setSpeed(5);
    
-      Athlete robo = new Athlete(1, 1, Display.EAST, 0); 
-
+      // Create the robot and place it in the starting position
+      Athlete robo = new Athlete(1, 1, Display.EAST, 0);
+   
+      // Initialize beeper piles
       int pile1 = 0;
       int pile2 = 0;
-      
+   
       // Move the robot until it finds a beeper
       while (!robo.nextToABeeper()) {
          robo.move();
       }
-      
-      int a;
-      for (a = 1; a <= 4; a++) {
+   
+      for (int a = 1; a <= 4; a++) {
          // Collect beepers into pile1 and put beepers from pile2
          while (robo.nextToABeeper()) {
             robo.pickBeeper();
@@ -33,7 +36,7 @@ public class Lab09 {
          }
       
          robo.move();
-           
+      
          // Collect beepers into pile2 and put beepers from pile1
          while (robo.nextToABeeper()) {
             robo.pickBeeper();
@@ -45,12 +48,9 @@ public class Lab09 {
          }
          robo.move();
       }
-      
+   
       // Turn the robot around and move it to the starting position
-      robo.turnAround();
-      while (robo.frontIsClear()) {
-         robo.move();
-      }
-      robo.turnAround();
+      robo.turnAround3();
+   
    }
 }
