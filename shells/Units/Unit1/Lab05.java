@@ -22,8 +22,8 @@ public class Lab05
       Racer mary = new Racer(7);
       Racer b = new Racer(4);
       Racer c = new Racer(1);
-      b.move();
-      b.jumpRight();
-      b.turnLeft();
+      
+     
+
    }
 }
