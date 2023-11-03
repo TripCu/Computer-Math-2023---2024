@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b126186-6aba-4528-982c-3e47fc665207" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/Units/Unit1/HillClimber.java" beforeDir="false" afterPath="$PROJECT_DIR$/shells/Units/Unit1/HillClimber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/Units/Unit1/Lab05.java" beforeDir="false" afterPath="$PROJECT_DIR$/shells/Units/Unit1/Lab05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/Units/Unit1/Lab06p2.java" beforeDir="false" afterPath="$PROJECT_DIR$/shells/Units/Unit1/Lab06p2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/Units/Unit1/StepClimber.java" beforeDir="false" afterPath="$PROJECT_DIR$/shells/Units/Unit1/StepClimber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +14,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TripCu&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4e03287b-d75c-41fe-b953-3954447511d5" />
+        <option name="url" value="https://github.com/TripCu/Computer-Math-2023---2024.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,8 +46,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
-    "last_opened_file_path": "/Users/tripcubbison/Library/CloudStorage/GoogleDrive-1060009@lcps.org/My Drive/Loudoun Vally high school 2023-2027/Computer-Math-2023---2024",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/FrameUser/Documents/GitHub/Computer-Math-2023---2024",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
