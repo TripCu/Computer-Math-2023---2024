@@ -10,7 +10,7 @@ public class Driver01 {
         frame.setSize(800, 800);
         frame.setLocation(100, 50);
         frame.setDefaultCloseOperation(3);
-        frame.setContentPane(new  PanelStopInTheNameOfLove());
+        frame.setContentPane(new  Panel01());
         frame.setVisible(true);
     }
 }
