@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Lab06_7_8_9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Lab06_7_8_9/karel2_c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lab06_7_8_9/Unit2Lab08.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lab06_7_8_9/Unit2Lab09.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lab06_7_8_9/Unit2Lab06.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lab06_7_8_9/Unit2Lab09ext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lab06_7_8_9/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lab06_7_8_9/Unit2Lab08ext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lab06_7_8_9/Unit2Lab07.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
