@@ -21,7 +21,7 @@ public class FancyHouse extends JFrame {
         cloudPositions.add(new Point(300, 100));
         cloudPositions.add(new Point(500, 30));
 
-        Timer timer = new Timer(10, new ActionListener() {
+        Timer timer = new Timer(pcongih, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 xPosition += 1;
@@ -41,12 +41,12 @@ public class FancyHouse extends JFrame {
         super.paint(g);
 
         // Draw background gradient
-        Graphics2D g2d = (Graphics2D) g;
-        Color color1 = new Color(135, 206, 250); // Light blue color
-        Color color2 = new Color(255, 255, 255); // White color
-        GradientPaint gradient = new GradientPaint(0, 0, color1, getWidth(), getHeight(), color2);
-        g2d.setPaint(gradient);
-        g2d.fillRect(0, 0, getWidth(), getHeight());
+       //Graphics2D g2d = (Graphics2D) g;
+       //Color color1 = new Color(135, 206, 250); // Light blue color
+       //Color color2 = new Color(255, 255, 255); // White color
+       //GradientPaint gradient = new GradientPaint(0, 0, color1, getWidth(), getHeight(), color2);
+       //g2d.setPaint(gradient);
+       //-g2d.fillRect(0, 0, getWidth(), getHeight());
 
         // Draw clouds
         for (Point cloudPosition : cloudPositions) {
@@ -74,8 +74,6 @@ public class FancyHouse extends JFrame {
         // Draw window
         g.setColor(new Color(173, 216, 230)); // Light blue color
         g.fillRect(xPosition + 250, getHeight() - 150, 50, 50);
-
-        Toolkit.getDefaultToolkit().sync();  // Synchronize the display on some systems
     }
 
     private void drawCloud(Graphics g, int x, int y) {
