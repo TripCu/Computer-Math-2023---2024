@@ -7,7 +7,7 @@
       private BufferedImage myImage;
       public Panel03()
       {
-         final int N = 400; //width & height of buffered-image
+         final int N = 800; //width & height of buffered-image
          myImage = new BufferedImage(N, N, BufferedImage.TYPE_INT_RGB);
          Graphics buffer = myImage.getGraphics();
       
