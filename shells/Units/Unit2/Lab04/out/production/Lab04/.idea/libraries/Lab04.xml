@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Lab04">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Unit2Lab04a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/karel2_c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Unit2Lab04.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
