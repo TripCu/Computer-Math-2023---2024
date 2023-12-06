@@ -30,7 +30,7 @@
       }   
        private void collide(Ball b, Polkadot pd)
       {
-        double d = distance(  /* 4 arguments */  );  
+        //double d = distance(  /* 4 arguments */  );
 		
 		  
       }

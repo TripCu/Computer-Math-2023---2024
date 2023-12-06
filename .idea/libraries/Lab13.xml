@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Lab13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/shells/Units/Unit3/Lab13/Unit3Lab13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/shells/Units/Unit3/Lab13/GraphicsNecklace.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Lab14">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/shells/Units/Unit5/Lab14/Unit5Lab14Koch.jar!/" />
+      <root url="jar://$PROJECT_DIR$/shells/Units/Unit5/Lab14/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/shells/Units/Unit5/Lab14/Unit5Lab14Squares.jar!/" />
+      <root url="jar://$PROJECT_DIR$/shells/Units/Unit5/Lab14/Unit5Lab14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/shells/Units/Unit5/Lab14/karel2_c.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

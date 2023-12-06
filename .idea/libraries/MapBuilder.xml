@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MapBuilder">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/shells/Units/Unit1/maps/MapBuilder.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

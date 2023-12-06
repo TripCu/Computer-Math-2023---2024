@@ -196,9 +196,7 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawCornerLines(Graphics g) {
-        g.setColor(Color.GREEN);
-        for (int x = 0; x <= 500; x += 50)
-            g.drawLine(50, 100, x, 0);
+
     }
 
 
