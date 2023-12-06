@@ -13,7 +13,7 @@ public class GraphicImage extends JPanel {
 
     public static final int CLEAR_SCREEN = -1;
     public static final int VERTICAL_LINES = 0;
-    public static final int HORIZTONAL_LINES = 1;
+    public static final int HORIZONTAL_LINES = 1;
     public static final int DIAGONAL_LINES = 2;
     public static final int CORNER_LINES = 3;
     public static final int WEB_TOP_RIGHT = 4;
@@ -62,7 +62,7 @@ public class GraphicImage extends JPanel {
                 drawVerticalLines(g);
                 break;
 
-            case HORIZTONAL_LINES:
+            case HORIZONTAL_LINES:
                 drawHorizontalLines(g);
                 break;
 
@@ -182,10 +182,11 @@ public class GraphicImage extends JPanel {
     public void drawDiagonalLines(Graphics g) {
         g.setColor(Color.YELLOW);
         int x;
-        for (x = 0; x <= 500; x += 50)
+        for (x = 0; x <= 500; x += 50) {
             g.drawLine(0, x, x, 0);
-        g.drawLine(500, x, x, 500);
-
+            g.drawLine(500, x, x, 500);
+        }
+            g.drawLine(0,500,500,0);
 
     }
 
@@ -196,7 +197,13 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawCornerLines(Graphics g) {
+        g.setColor(Color.YELLOW);
 
+        for (int i = 0; i < 15; i++) {
+            int x2 = 500 - (i * 500 / 15);
+            int y2 = 500 - (i * 500 / 15);
+            g.drawLine(500, 500, x2, y2);
+        }
     }
 
 
@@ -251,6 +258,18 @@ public class GraphicImage extends JPanel {
      */
     public void drawVerticalBars(Graphics g) {
 
+        int numberOfBars = 5;
+        int barWidth = getWidth() / 5;
+
+            g.setColor(Color.BLUE);
+
+            for (int i = 0; i < numberOfBars; i++) {
+                int x = i * barWidth;
+                int y = 0; // Start drawing from the top
+                int barHeight = getHeight();
+                g.fillRect(x, y, barWidth, barHeight);
+            }
+
 
     }
 
@@ -280,7 +299,7 @@ public class GraphicImage extends JPanel {
 
 
     /**
-     * Create an 8x8 square checkerboard
+     * Create a 8x8 square checkerboard
      *
      * @param g the Graphics object
      */
