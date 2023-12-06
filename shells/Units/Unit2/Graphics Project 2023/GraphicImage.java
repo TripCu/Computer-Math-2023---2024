@@ -315,13 +315,16 @@ public class GraphicImage extends JPanel {
 
 
     /**
-     * Draw the triangle pattern (similar to Triforce from Zelda games).
+     * Draw the triangle pattern (similar to Tri-force from Zelda games).
      *
      * @param g the graphic
      */
     public void drawTriangles(Graphics g) {
         g.setColor(Color.yellow);
         g.drawPolygon(new int[]{10, 20, 30}, new int[]{100, 20, 100}, 3);
+        int xPoints[] = {0, 250, 500, 372};
+        int yPoints[] = {467, 33, 467, 372};
+        g.fillPolygon();
 
 
     }
