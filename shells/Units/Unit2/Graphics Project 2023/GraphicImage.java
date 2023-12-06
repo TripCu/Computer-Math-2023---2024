@@ -213,7 +213,12 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawWebTopRight(Graphics g) {
+        g.setColor(Color.YELLOW);
+        int x;
+        for (x = 0; x <= 500; x += 50) {
+            g.drawLine(x, 0, 500, x);
 
+        }
 
     }
 
@@ -224,7 +229,12 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawWebTopLeft(Graphics g) {
+        g.setColor(Color.YELLOW);
+        int x;
+        for (x = 0; x <= 500; x += 50) {
+            g.drawLine(0, x, (500-x), 0);
 
+        }
 
     }
 
@@ -235,8 +245,34 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawWebCenter(Graphics g) {
+        for(int y =250; y >= 0; y-= 25)
+        {
+            g.setColor(Color.YELLOW);
+            g.drawLine(250, y, (250 + y), 250);
+
+        }
+
+        for(int y =250; y <= 500; y+= 25)
+        {
+            g.setColor(Color.YELLOW);
+            g.drawLine(250, y, (750 - y), 250);
+
+        }
+
+        for(int y =250; y <= 500; y+= 25)
+        {
+            g.setColor(Color.YELLOW);
+            g.drawLine(250, y, (y- 250), 250);
 
 
+
+        }
+        for(int y =250; y >= 0; y-= 25)
+        {
+            g.setColor(Color.YELLOW);
+            g.drawLine(250, y, (250 - y), 250);
+
+        }
     }
 
 
@@ -246,6 +282,12 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawStarburst(Graphics g) {
+        for( int l = 0; l<= 500; l += 36)
+        {
+            g.setColor(Color.YELLOW);
+            g.drawLine(0, l,500,500-l);
+            g.drawLine(l, 0,500-l,500);
+        }
 
 
     }
@@ -263,11 +305,9 @@ public class GraphicImage extends JPanel {
 
             g.setColor(Color.BLUE);
 
-            for (int i = 0; i < numberOfBars; i++) {
-                int x = i * barWidth;
-                int y = 0; // Start drawing from the top
-                int barHeight = getHeight();
-                g.fillRect(x, y, barWidth, barHeight);
+            for (int i = 0; i <= 500; i+= 100) {
+                g.fillRect( i,0,50, 500);
+
             }
 
 
