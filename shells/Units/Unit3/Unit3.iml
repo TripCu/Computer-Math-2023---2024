@@ -3,19 +3,19 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Lab03" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab04" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab05" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab06" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab07" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab08" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab09" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab10" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab12" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab13" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab15" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Lab16" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab03" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab04" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab05" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab06" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab07" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab08" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab09" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab10" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab12" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab13" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab15" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab16" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
