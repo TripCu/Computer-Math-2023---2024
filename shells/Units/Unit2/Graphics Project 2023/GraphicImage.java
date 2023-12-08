@@ -1,7 +1,5 @@
-import java.awt.Color;
-import java.awt.Graphics;
-
 import javax.swing.*;
+import java.awt.*;
 
 
 public class GraphicImage extends JPanel {
@@ -509,23 +507,23 @@ public class GraphicImage extends JPanel {
 
         // Draw pencil body
         g.setColor(Color.YELLOW);
-        g.fillRect(centerX - 20, centerY - 100, 40, 100);
+        g.fillRect(centerX - 100, centerY - 20, 100, 40);
 
         // Draw pencil eraser
         g.setColor(Color.PINK);
-        g.fillArc(centerX - 20, centerY - 120, 40, 40, 0, 180);
+        g.fillArc(centerX - 120, centerY - 20, 40, 40, 90, 180);
 
-        // Draw pencil tip
         Color LightBrown = new Color(244, 203, 66);
         g.setColor(LightBrown);
-        g.fillRect(centerX - 10, centerY + 10, 20, 10);
+        int[] xPoints = {centerX - 10, centerX, centerX + 10};
+        int[] yPoints = {centerY - 5, centerY - 25, centerY - 5};
+        g.fillPolygon(xPoints, yPoints, 3);
 
         // Draw pencil lead
-        g.setColor(Color.gray);
-        g.drawLine(centerX, centerY + 10, centerX, centerY + 70);
-
-
+        g.setColor(Color.GRAY);
+        g.drawLine(centerX - 10, centerY, centerX - 70, centerY);
+    }
     }
 
 
-}
+
