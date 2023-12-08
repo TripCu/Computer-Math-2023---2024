@@ -27,7 +27,6 @@ public class GraphicImage extends JPanel {
     public static final int PENCIL = 17;
 
 
-    private Color screenColor;
     private int pictureName = CLEAR_SCREEN;
 
 
@@ -38,10 +37,6 @@ public class GraphicImage extends JPanel {
         repaint();
     }
 
-
-    public void setColor(Color color) {
-        screenColor = color;
-    }
 
     public void setPictureName(int name) {
         pictureName = name;
@@ -295,10 +290,7 @@ public class GraphicImage extends JPanel {
      */
     public void drawVerticalBars(Graphics g) {
 
-        int numberOfBars = 5;
-        int barWidth = getWidth() / 5;
-
-            g.setColor(Color.red);
+        g.setColor(Color.red);
 
             for (int i = 0; i <= 500; i+= 100) {
                 g.fillRect( i,0,50, 500);

@@ -7,8 +7,6 @@ import javax.swing.*;
 public class GraphicDesignProject extends JPanel {
 
     public static final int CLEAR_SCREEN = -1;
-    public static final int WIDTH = 500;
-    public static final int HEIGHT = 500;
 
     public String[] buttonNames = {"Vertical Lines", "Horizontal Lines",
             "Diagonal Lines", "Corner",
@@ -146,17 +144,15 @@ public class GraphicDesignProject extends JPanel {
      */
     private class ClearListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            clearScreen(WIDTH, HEIGHT);
+            clearScreen();
         }
     }
 
     /**
      * Clears the screen to a black background
      *
-     * @param width  the width of the screen
-     * @param height the height of the screen
      */
-    public void clearScreen(int width, int height) {
+    public void clearScreen() {
         screen.setPictureName(CLEAR_SCREEN);
     }
 
