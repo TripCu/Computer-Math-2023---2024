@@ -245,14 +245,11 @@ public class GraphicImage extends JPanel {
         int centerX = getWidth() / 2;
         int centerY = 500/2;
         int pacManSize = 500;
-
         g.setColor(Color.YELLOW);
         g.fillArc(centerX - pacManSize / 2, 0, pacManSize, pacManSize, 45, 270);
-
         int[] xPoints = {centerX, centerX + pacManSize / 2, centerX};
         int[] yPoints = {centerY, centerY + pacManSize / 2, centerY};
         g.fillPolygon(xPoints, yPoints, 3);
-
         int eyeSize = pacManSize / 10;
         int eyeOffsetX = pacManSize / 15;
         int eyeOffsetY = pacManSize / 3;
@@ -272,7 +269,7 @@ public class GraphicImage extends JPanel {
             }
                 g.fillRect(0, i * stripeHeight, getWidth(), stripeHeight);
                 g.setColor(Color.BLUE);
-            g   .fillRect(0, 0, getWidth() /2 , stripeHeight * 6);
+                g.fillRect(0, 0, getWidth() /2 , stripeHeight * 6);
             }
         g.setColor(Color.WHITE);
         for (int r = 0; r < 7; r++) {
@@ -291,7 +288,6 @@ public class GraphicImage extends JPanel {
             for (int j = 0; j < 11; j++) {
                 int x = j * 50;
                 int y = i * 20;
-
                 if (i % 2 != 0) {
                     x -= 50 / 2;
                 }
@@ -331,14 +327,10 @@ public class GraphicImage extends JPanel {
     public void drawPencil(Graphics g) {
         int centerX = getWidth() / 2;
         int centerY = getHeight() / 2;
-
-        // Draw pencil body
         g.setColor(Color.YELLOW);
         g.fillRect(centerX - 100, centerY - 20, 300, 100);
-        // Draw pencil eraser
         g.setColor(Color.PINK);
         g.fillArc(centerX - 115, centerY - 20, 40, 40, 90, 180);
-
         Color LightBrown = new Color(244, 203, 66);
         g.setColor(LightBrown);
 
