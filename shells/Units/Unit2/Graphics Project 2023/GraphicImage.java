@@ -4,12 +4,7 @@ import java.awt.Graphics;
 import javax.swing.*;
 
 
-@SuppressWarnings("serial")
 public class GraphicImage extends JPanel {
-
-    public static final int SCREEN_SIZE = 500;
-    public static final int WIDTH = SCREEN_SIZE;
-    public static final int HEIGHT = SCREEN_SIZE;
 
     public static final int CLEAR_SCREEN = -1;
     public static final int VERTICAL_LINES = 0;
@@ -197,15 +192,15 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawCornerLines(Graphics g) {
-        g.setColor(Color.green);
-
-        for (int i = 0; i < 15; i++) {
-            int x2 = 500 - (i * 500 / 15);
-            int y2 = 500 - (i * 500 / 15);
-            g.drawLine(500, 500, x2, y2);
+        g.setColor(new Color(100, 100, 255));
+        for(int cline = 500; cline >= 0; cline-=50){
+            g.drawLine(0, 0, cline, 500);
         }
-    }
+        for(int cline = 500; cline >= 0; cline-=50){
+            g.drawLine(0, 0, 500, cline);
+        }
 
+    }
 
     /**
      * Draw the webbing pattern that appears in the top-right corner.
