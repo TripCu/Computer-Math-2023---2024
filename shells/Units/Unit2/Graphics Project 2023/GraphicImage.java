@@ -45,81 +45,25 @@ public class GraphicImage extends JPanel {
         clearScreen(g);
 
         switch (pictureName) {
-
-            case VERTICAL_LINES:
-                drawVerticalLines(g);
-                break;
-
-            case HORIZONTAL_LINES:
-                drawHorizontalLines(g);
-                break;
-
-            case DIAGONAL_LINES:
-                drawDiagonalLines(g);
-                break;
-
-            case CORNER_LINES:
-                drawCornerLines(g);
-                break;
-
-            case WEB_TOP_RIGHT:
-                drawWebTopRight(g);
-                break;
-
-            case WEB_TOP_LEFT:
-                drawWebTopLeft(g);
-                break;
-
-            case WEB_CENTER:
-                drawWebCenter(g);
-                break;
-
-            case STARBURST:
-                drawStarburst(g);
-                break;
-
-            case VERTICAL_BARS:
-                drawVerticalBars(g);
-                break;
-
-            case TRIANGLES:
-                drawTriangles(g);
-                break;
-
-            case BULLSEYE:
-                drawBullseye(g);
-                break;
-
-            case CHECKERBOARD:
-                drawCheckerboard(g);
-                break;
-
-            case DOTS:
-                drawDots(g);
-                break;
-
-            case PACMAN:
-                drawPacMan(g);
-                break;
-
-            case AMERICAN_FLAG:
-                drawAmericanFlag(g);
-                break;
-
-            case BRICKS:
-                drawBricks(g);
-                break;
-
-            case PIZZA:
-                drawPizza(g);
-                break;
-
-            case PENCIL:
-                drawPencil(g);
-                break;
-
-            default:
-                clearScreen(g);
+            case VERTICAL_LINES -> drawVerticalLines(g);
+            case HORIZONTAL_LINES -> drawHorizontalLines(g);
+            case DIAGONAL_LINES -> drawDiagonalLines(g);
+            case CORNER_LINES -> drawCornerLines(g);
+            case WEB_TOP_RIGHT -> drawWebTopRight(g);
+            case WEB_TOP_LEFT -> drawWebTopLeft(g);
+            case WEB_CENTER -> drawWebCenter(g);
+            case STARBURST -> drawStarburst(g);
+            case VERTICAL_BARS -> drawVerticalBars(g);
+            case TRIANGLES -> drawTriangles(g);
+            case BULLSEYE -> drawBullseye(g);
+            case CHECKERBOARD -> drawCheckerboard(g);
+            case DOTS -> drawDots(g);
+            case PACMAN -> drawPacMan(g);
+            case AMERICAN_FLAG -> drawAmericanFlag(g);
+            case BRICKS -> drawBricks(g);
+            case PIZZA -> drawPizza(g);
+            case PENCIL -> drawPencil(g);
+            default -> clearScreen(g);
         }
     }
 
@@ -429,9 +373,6 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawAmericanFlag(Graphics g) {
-        g.setColor(Color.WHITE);
-        g.fillRect(0, 0, getWidth(), getHeight());
-
         int stripeHeight = getHeight() / 13;
         for (int i = 0; i < 13; i++) {
             if (i % 2 == 0) {
@@ -440,11 +381,20 @@ public class GraphicImage extends JPanel {
                 g.setColor(Color.WHITE);
             }
             g.fillRect(0, i * stripeHeight, getWidth(), stripeHeight);
+            g.setColor(Color.BLUE);
+            g.fillRect(0, 0, getWidth() /2 , stripeHeight * 6);
+            }
+        g.setColor(Color.WHITE);
+        for (int r = 0; r < 7; r++) {
+            for (int c1 = 0; c1 < 7; c1++) {
+                int x = c1 * 220/6;
+                int y = r * 220/6;
+                g.fillOval(x+10, y+10, 20, 20);
+            }
+        }
         }
 
-        g.setColor(Color.BLUE);
-        g.fillRect(0, 0, getWidth() /2 , stripeHeight * 6);
-    }
+
 
 
 
@@ -481,6 +431,7 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawPizza(Graphics g) {
+        //Use fill arc instead of this
         g.setColor(new Color(244, 203, 66));
         g.fillOval(50,0,500,500);
         g.setColor(Color.YELLOW);
@@ -495,6 +446,9 @@ public class GraphicImage extends JPanel {
         g.fillOval(145,170,30,30);
         g.fillOval(180,205,25,25);
         g.fillOval(125,210,25,25);
+
+        //g.fillArc(50,5,100,100,75,-40);
+
 
 
     }
@@ -520,13 +474,7 @@ public class GraphicImage extends JPanel {
 
         Color LightBrown = new Color(244, 203, 66);
         g.setColor(LightBrown);
-        int[] xPoints = {centerX - 10, centerX, centerX + 10};
-        int[] yPoints = {centerY - 5, centerY - 25, centerY - 5};
-        g.fillPolygon(xPoints, yPoints, 3);
 
-        // Draw pencil lead
-        g.setColor(Color.GRAY);
-        g.drawLine(centerX - 10, centerY, centerX - 70, centerY);
     }
     }
 
