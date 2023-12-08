@@ -439,11 +439,9 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawAmericanFlag(Graphics g) {
-        // Draw the flag background
         g.setColor(Color.WHITE);
         g.fillRect(0, 0, getWidth(), getHeight());
 
-        // Draw the red and white stripes
         int stripeHeight = getHeight() / 13;
         for (int i = 0; i < 13; i++) {
             if (i % 2 == 0) {
@@ -454,7 +452,6 @@ public class GraphicImage extends JPanel {
             g.fillRect(0, i * stripeHeight, getWidth(), stripeHeight);
         }
 
-        // Draw the blue union
         g.setColor(Color.BLUE);
         g.fillRect(0, 0, getWidth() * 1/2 , stripeHeight * 6);
     }
@@ -472,17 +469,14 @@ public class GraphicImage extends JPanel {
             int brickWidth = getWidth() / cols;
             int brickHeight = getHeight() / rows;
 
-            // Draw the brick pattern
             for (int row = 0; row < rows; row++) {
                 for (int col = 0; col < cols; col++) {
                     int x = col * brickWidth;
                     int y = row * brickHeight;
 
-                    // Draw red brick
                     g.setColor(Color.RED);
                     g.fillRect(x, y, brickWidth, brickHeight);
-
-                    // Draw white lines (for separation)
+                    
                     g.setColor(Color.WHITE);
                     g.drawRect(x, y, brickWidth, brickHeight);
                 }
