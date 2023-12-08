@@ -231,6 +231,11 @@ public class GraphicImage extends JPanel {
      * Draw the webbing pattern that appears in the center of the screen.
      *
      * @param g the graphic
+     *
+     *
+     *
+     *
+     *
      */
     public void drawWebCenter(Graphics g) {
         for(int y =250; y >= 0; y-= 25)
