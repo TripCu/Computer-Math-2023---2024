@@ -308,14 +308,14 @@ public class GraphicImage extends JPanel {
      */
     public void drawTriangles(Graphics g) {
         g.setColor(Color.YELLOW);
-        int xPoints[] = {130, 250, 370};
-        int yPoints[] = {250, 0, 250};
+        int[] xPoints = {130, 250, 370};
+        int[] yPoints = {250, 0, 250};
         g.fillPolygon(xPoints, yPoints, 3);
-        int x2Points[] = {0, 130, 250};
-        int y2Points[] = {500, 250, 500};
+        int[] x2Points = {0, 130, 250};
+        int[] y2Points = {500, 250, 500};
         g.fillPolygon(x2Points, y2Points, 3);
-        int x3Points[] = {250, 370, 500};
-        int y3Points[] = {500, 250, 500};
+        int[] x3Points = {250, 370, 500};
+        int[] y3Points = {500, 250, 500};
         g.fillPolygon(x3Points, y3Points, 3);
 
 
@@ -388,7 +388,7 @@ public class GraphicImage extends JPanel {
                 int y = row * getHeight() / (rows - 1);
 
                 g.setColor(Color.pink);
-                g.fillOval(x, y, dotSize, dotSize);
+                g.fillOval(x+30, y+30, dotSize, dotSize);
             }
         }
     }
@@ -440,7 +440,7 @@ public class GraphicImage extends JPanel {
         }
 
         g.setColor(Color.BLUE);
-        g.fillRect(0, 0, getWidth() * 1/2 , stripeHeight * 6);
+        g.fillRect(0, 0, getWidth() /2 , stripeHeight * 6);
     }
 
 
@@ -451,24 +451,22 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawBricks(Graphics g) {
-            int rows = 10;
-            int cols = 10;
-            int brickWidth = getWidth() / cols;
-            int brickHeight = getHeight() / rows;
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 11; j++) {
+                int x = j * 50;
+                int y = i * 20;
 
-            for (int row = 0; row < rows; row++) {
-                for (int col = 0; col < cols; col++) {
-                    int x = col * brickWidth;
-                    int y = row * brickHeight;
-
-                    g.setColor(Color.RED);
-                    g.fillRect(x, y, brickWidth, brickHeight);
-                    
-                    g.setColor(Color.WHITE);
-                    g.drawRect(x, y, brickWidth, brickHeight);
+                if (i % 2 != 0) {
+                    x -= 50 / 2;
                 }
+
+                g.setColor(Color.RED);
+                g.fillRect(x, y, 50, 20);
+                g.setColor(Color.WHITE);
+                g.drawRect(x, y, 50, 20);
             }
         }
+    }
 
 
 
@@ -480,6 +478,20 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawPizza(Graphics g) {
+        g.setColor(new Color(244, 203, 66));
+        g.fillOval(50,0,500,500);
+        g.setColor(Color.YELLOW);
+        g.fillOval(75,15,500,500);
+        g.setColor(Color.BLACK);
+        g.fillRect(0,250,500,250);
+        int[] xPoints = {300, 0, 500, 500};
+        int[] yPoints = {300, 0, 0, 300};
+        g.fillPolygon(xPoints, yPoints, 4);
+        g.setColor(Color.RED);
+        g.fillOval(125,150,20,20);
+        g.fillOval(145,170,30,30);
+        g.fillOval(180,205,25,25);
+        g.fillOval(125,210,25,25);
 
 
     }
@@ -492,6 +504,25 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawPencil(Graphics g) {
+        int centerX = getWidth() / 2;
+        int centerY = getHeight() / 2;
+
+        // Draw pencil body
+        g.setColor(Color.YELLOW);
+        g.fillRect(centerX - 20, centerY - 100, 40, 100);
+
+        // Draw pencil eraser
+        g.setColor(Color.PINK);
+        g.fillArc(centerX - 20, centerY - 120, 40, 40, 0, 180);
+
+        // Draw pencil tip
+        Color LightBrown = new Color(244, 203, 66);
+        g.setColor(LightBrown);
+        g.fillRect(centerX - 10, centerY + 10, 20, 10);
+
+        // Draw pencil lead
+        g.setColor(Color.gray);
+        g.drawLine(centerX, centerY + 10, centerX, centerY + 70);
 
 
     }
