@@ -153,7 +153,7 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawVerticalLines(Graphics g) {
-        g.setColor(Color.GREEN);
+        g.setColor(Color.CYAN);
         for (int x = 0; x <= 500; x += 50)
             g.drawRect(x, 0, 50, 500);
 
@@ -167,7 +167,7 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawHorizontalLines(Graphics g) {
-        g.setColor(Color.GREEN);
+        g.setColor(Color.yellow);
         for (int x = 0; x <= 500; x += 50)
             g.drawLine(500, x, 0, x);
 
@@ -180,7 +180,7 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawDiagonalLines(Graphics g) {
-        g.setColor(Color.YELLOW);
+        g.setColor(Color.red);
         int x;
         for (x = 0; x <= 500; x += 50) {
             g.drawLine(0, x, x, 0);
@@ -197,7 +197,7 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawCornerLines(Graphics g) {
-        g.setColor(Color.YELLOW);
+        g.setColor(Color.green);
 
         for (int i = 0; i < 15; i++) {
             int x2 = 500 - (i * 500 / 15);
@@ -213,7 +213,7 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawWebTopRight(Graphics g) {
-        g.setColor(Color.YELLOW);
+        g.setColor(Color.pink);
         int x;
         for (x = 0; x <= 500; x += 50) {
             g.drawLine(x, 0, 500, x);
@@ -229,7 +229,7 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawWebTopLeft(Graphics g) {
-        g.setColor(Color.YELLOW);
+        g.setColor(Color.pink);
         int x;
         for (x = 0; x <= 500; x += 50) {
             g.drawLine(0, x, (500-x), 0);
@@ -247,21 +247,21 @@ public class GraphicImage extends JPanel {
     public void drawWebCenter(Graphics g) {
         for(int y =250; y >= 0; y-= 25)
         {
-            g.setColor(Color.YELLOW);
+            g.setColor(Color.pink);
             g.drawLine(250, y, (250 + y), 250);
 
         }
 
         for(int y =250; y <= 500; y+= 25)
         {
-            g.setColor(Color.YELLOW);
+            g.setColor(Color.pink);
             g.drawLine(250, y, (750 - y), 250);
 
         }
 
         for(int y =250; y <= 500; y+= 25)
         {
-            g.setColor(Color.YELLOW);
+            g.setColor(Color.pink);
             g.drawLine(250, y, (y- 250), 250);
 
 
@@ -269,7 +269,7 @@ public class GraphicImage extends JPanel {
         }
         for(int y =250; y >= 0; y-= 25)
         {
-            g.setColor(Color.YELLOW);
+            g.setColor(Color.pink);
             g.drawLine(250, y, (250 - y), 250);
 
         }
@@ -284,7 +284,7 @@ public class GraphicImage extends JPanel {
     public void drawStarburst(Graphics g) {
         for( int l = 0; l<= 500; l += 36)
         {
-            g.setColor(Color.YELLOW);
+            g.setColor(Color.orange);
             g.drawLine(0, l,500,500-l);
             g.drawLine(l, 0,500-l,500);
         }
@@ -303,7 +303,7 @@ public class GraphicImage extends JPanel {
         int numberOfBars = 5;
         int barWidth = getWidth() / 5;
 
-            g.setColor(Color.BLUE);
+            g.setColor(Color.red);
 
             for (int i = 0; i <= 500; i+= 100) {
                 g.fillRect( i,0,50, 500);
@@ -320,14 +320,20 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawTriangles(Graphics g) {
-        g.setColor(Color.yellow);
-        g.drawPolygon(new int[]{10, 20, 30}, new int[]{100, 20, 100}, 3);
-        int xPoints[] = {0, 250, 500, 372};
-        int yPoints[] = {467, 33, 467, 372};
-        g.fillPolygon();
+        g.setColor(Color.YELLOW);
+        int xPoints[] = {130, 250, 370};
+        int yPoints[] = {250, 0, 250};
+        g.fillPolygon(xPoints, yPoints, 3);
+        int x2Points[] = {0, 130, 250};
+        int y2Points[] = {500, 250, 500};
+        g.fillPolygon(x2Points, y2Points, 3);
+        int x3Points[] = {250, 370, 500};
+        int y3Points[] = {500, 250, 500};
+        g.fillPolygon(x3Points, y3Points, 3);
 
 
     }
+
 
 
     /**
@@ -336,8 +342,18 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawBullseye(Graphics g) {
-
-
+        int c = 0;
+        for(int x = 0; x <= 500; x += 100){
+            if(c == 0){
+                g.setColor(Color.CYAN);
+                c = 1;
+            }
+            else {
+                g.setColor(Color.BLACK);
+                c = 0;
+            }
+            g.fillOval(x/2, x/2, 500-x, 500-x);
+        }
     }
 
 
@@ -348,7 +364,24 @@ public class GraphicImage extends JPanel {
      */
     public void drawCheckerboard(Graphics g) {
 
+        int rows = 8;
+        int cols = 8;
+        int cellSize = getWidth() / cols;
 
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                int x = col * cellSize;
+                int y = row * cellSize;
+
+                if ((row + col) % 2 == 0) {
+                    g.setColor(Color.RED);
+                } else {
+                    g.setColor(Color.BLACK);
+                }
+
+                g.fillRect(x, y, cellSize, cellSize);
+            }
+        }
     }
 
 
@@ -358,9 +391,21 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawDots(Graphics g) {
+        int rows = 5;
+        int cols = 5;
+        int dotSize = 40;
 
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                int x = col * getWidth() / (cols - 1);
+                int y = row * getHeight() / (rows - 1);
 
+                g.setColor(Color.pink);
+                g.fillOval(x, y, dotSize, dotSize);
+            }
+        }
     }
+
 
 
     /**
@@ -369,8 +414,22 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawPacMan(Graphics g) {
+        int centerX = getWidth() / 2;
+        int centerY = 500/2;
+        int pacManSize = 500;
 
+        g.setColor(Color.YELLOW);
+        g.fillArc(centerX - pacManSize / 2, 0, pacManSize, pacManSize, 45, 270);
 
+        int[] xPoints = {centerX, centerX + pacManSize / 2, centerX};
+        int[] yPoints = {centerY, centerY + pacManSize / 2, centerY};
+        g.fillPolygon(xPoints, yPoints, 3);
+
+        int eyeSize = pacManSize / 10;
+        int eyeOffsetX = pacManSize / 15;
+        int eyeOffsetY = pacManSize / 3;
+        g.setColor(Color.BLACK);
+        g.fillOval(centerX - eyeOffsetX, centerY - eyeOffsetY, eyeSize, eyeSize);
     }
 
 
@@ -380,9 +439,26 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawAmericanFlag(Graphics g) {
+        // Draw the flag background
+        g.setColor(Color.WHITE);
+        g.fillRect(0, 0, getWidth(), getHeight());
 
+        // Draw the red and white stripes
+        int stripeHeight = getHeight() / 13;
+        for (int i = 0; i < 13; i++) {
+            if (i % 2 == 0) {
+                g.setColor(Color.RED);
+            } else {
+                g.setColor(Color.WHITE);
+            }
+            g.fillRect(0, i * stripeHeight, getWidth(), stripeHeight);
+        }
 
+        // Draw the blue union
+        g.setColor(Color.BLUE);
+        g.fillRect(0, 0, getWidth() * 1/2 , stripeHeight * 6);
     }
+
 
 
     /**
@@ -391,9 +467,29 @@ public class GraphicImage extends JPanel {
      * @param g the graphic
      */
     public void drawBricks(Graphics g) {
+            int rows = 10;
+            int cols = 10;
+            int brickWidth = getWidth() / cols;
+            int brickHeight = getHeight() / rows;
+
+            // Draw the brick pattern
+            for (int row = 0; row < rows; row++) {
+                for (int col = 0; col < cols; col++) {
+                    int x = col * brickWidth;
+                    int y = row * brickHeight;
+
+                    // Draw red brick
+                    g.setColor(Color.RED);
+                    g.fillRect(x, y, brickWidth, brickHeight);
+
+                    // Draw white lines (for separation)
+                    g.setColor(Color.WHITE);
+                    g.drawRect(x, y, brickWidth, brickHeight);
+                }
+            }
+        }
 
 
-    }
 
 
     /**
