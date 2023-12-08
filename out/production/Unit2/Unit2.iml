@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Graphics Project 2023" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab00" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab01" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab02" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab03" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab04" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab05" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab06_7_8_9" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab10" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab11" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab12" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab13" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab14" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab15" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab16" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab17" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab18" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab19" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab20" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Lab04" level="project" />
+    <orderEntry type="library" name="Setup files" level="project" />
+    <orderEntry type="library" name="Lab14" level="project" />
+    <orderEntry type="library" name="Lab06_7_8_9" level="project" />
+  </component>
+</module>

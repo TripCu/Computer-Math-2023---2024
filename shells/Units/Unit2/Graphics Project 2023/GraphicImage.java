@@ -170,7 +170,6 @@ public class GraphicImage extends JPanel {
                 g.fillRect( i,0,50, 500);
             }
     }
-
     /**
      * Draw the triangle pattern (similar to Tri-force from Zelda games).
      */
