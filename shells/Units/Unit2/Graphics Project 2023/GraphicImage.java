@@ -103,7 +103,7 @@ public class GraphicImage extends JPanel {
      * Draw at least 15 lines all converging to the top-left corner
      */
     public void drawCornerLines(Graphics g) {
-        g.setColor(new Color(100, 100, 255));
+       g.setColor(Color.green);
         for (int cline = 500; cline >= 0; cline -= 50) {
             g.drawLine(0, 0, cline, 500);
         }
@@ -138,22 +138,17 @@ public class GraphicImage extends JPanel {
      * Draw the webbing pattern that appears in the center of the screen.
      */
     public void drawWebCenter(Graphics g) {
+        g.setColor(Color.pink);
         for (int y = 250; y >= 0; y -= 25) {
-            g.setColor(Color.pink);
             g.drawLine(250, y, (250 + y), 250);
         }
-
         for (int y = 250; y <= 500; y += 25) {
-            g.setColor(Color.pink);
             g.drawLine(250, y, (750 - y), 250);
         }
-
         for (int y = 250; y <= 500; y += 25) {
-            g.setColor(Color.pink);
             g.drawLine(250, y, (y - 250), 250);
         }
         for (int y = 250; y >= 0; y -= 25) {
-            g.setColor(Color.pink);
             g.drawLine(250, y, (250 - y), 250);
         }
     }
@@ -162,8 +157,8 @@ public class GraphicImage extends JPanel {
      * Draw a starburst of lines that appear to come from the center of the screen.
      */
     public void drawStarburst(Graphics g) {
+        g.setColor(Color.orange);
         for (int l = 0; l <= 500; l += 36) {
-            g.setColor(Color.orange);
             g.drawLine(0, l, 500, 500 - l);
             g.drawLine(l, 0, 500 - l, 500);
         }
@@ -317,22 +312,21 @@ public class GraphicImage extends JPanel {
      * and pepperoni (other toppings optional)
      */
     public void drawPizza(Graphics g) {
-        //Use fill arc instead of this
         g.setColor(new Color(244, 203, 66));
         g.fillOval(50, 0, 500, 500);
         g.setColor(Color.YELLOW);
-        g.fillOval(75, 15, 450, 450); //500 //500
+        g.fillOval(75, 15, 450, 450);
         g.setColor(Color.BLACK);
         g.fillRect(0, 250, 500, 250);
         int[] xPoints = {300, 0, 500, 500};
         int[] yPoints = {300, 0, 0, 300};
+        g.setColor(Color.black);
         g.fillPolygon(xPoints, yPoints, 4);
         g.setColor(Color.RED);
         g.fillOval(125, 150, 20, 20);
         g.fillOval(145, 170, 30, 30);
         g.fillOval(180, 205, 25, 25);
         g.fillOval(125, 210, 25, 25);
-        //g.fillArc(50,5,100,100,75,-40);
     }
 
     /**
@@ -347,13 +341,9 @@ public class GraphicImage extends JPanel {
         g.setColor(Color.GRAY);
         g.fillRect(120, 225, 35, 100);
         g.setColor(Color.ORANGE);
-        int[] xPoints1 = {390, 390, 475};
-        int[] yPoints1 = {225, 325, 273};
-        g.fillPolygon(xPoints1, yPoints1, 3);
+        g.fillPolygon(new int[]{390, 390, 475}, new int[]{225, 325, 273}, 3);
         g.setColor(new Color(70, 70, 70));
-        int[] xPoints2 = {450, 450, 475};
-        int[] yPoints2 = {289, 258, 273};
-        g.fillPolygon(xPoints2, yPoints2, 3);
+        g.fillPolygon(new int[]{450, 450, 475}, new int[]{289, 258, 273}, 3);
 
 
     }
