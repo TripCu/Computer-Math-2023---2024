@@ -9,7 +9,11 @@
       <excludeFolder url="file://$MODULE_DIR$/Lab02" />
       <excludeFolder url="file://$MODULE_DIR$/Lab03" />
       <excludeFolder url="file://$MODULE_DIR$/Lab04" />
+<<<<<<< HEAD
+      <excludeFolder url="file://$MODULE_DIR$/Lab05" />
+=======
       <excludeFolder url="file://$MODULE_DIR$/Lab06_7_8_9" />
+>>>>>>> 822e8b2d97c97e09f5dae5a3b7a43eeb7588815a
       <excludeFolder url="file://$MODULE_DIR$/Lab10" />
       <excludeFolder url="file://$MODULE_DIR$/Lab11" />
       <excludeFolder url="file://$MODULE_DIR$/Lab12" />

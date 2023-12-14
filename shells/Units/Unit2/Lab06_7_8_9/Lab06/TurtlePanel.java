@@ -1,4 +1,4 @@
-	 //Torbert, e-mail: smtorbert@fcps.edu	
+package Lab06_7_8_9.Lab06;     //Torbert, e-mail: smtorbert@fcps.edu
 	 //version 6.17.2003
 
    import edu.fcps.Turtle;
