@@ -1,7 +1,9 @@
+package Christmas_Tree_Compettion;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class ChristmasTree extends JPanel {
+class ChristmasTree extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);

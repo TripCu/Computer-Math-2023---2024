@@ -31,12 +31,9 @@ public class PolygonTurtle extends Turtle
     }
     public void drawShape()
     {
-
-        /************************/
-        /*                      */
-        /* Your code goes here. */
-        /*                      */
-        /************************/
-
+        for (int i =1; i <= 4; i++){
+            forward(mySize);
+            turnLeft(360/mySides);
+        }
     }
 }
