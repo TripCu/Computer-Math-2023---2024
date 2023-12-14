@@ -1,5 +1,3 @@
-package Lab06_7_8_9;
-
 import edu.fcps.Turtle;
 import java.awt.Color;
 import javax.swing.JFrame;
