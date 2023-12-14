@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="karel2_c">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/shells/Units/Unit2/Lab06_7_8_9/karel2_c" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/shells/Units/Unit2/Lab06_7_8_9/karel2_c" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/shells/Units/Unit2/Lab06_7_8_9/karel2_c" recursive="false" />
+  </library>
+</component>
