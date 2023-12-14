@@ -1,35 +1,33 @@
-	//Name______________________________ Date_____________
+package Lab06_7_8_9.Lab07;    //Name______________________________ Date_____________
    import edu.fcps.Turtle;
-    public class SquareTurtle extends Turtle
+    public class PolygonTurtle extends Turtle
    {
       private double mySize;
-   
-   	//*************************constructors*************************
-       public SquareTurtle()
+      private int mySides;
+       public PolygonTurtle()
       {
          super();
          mySize = 50.0;
+         mySides = 6;
       }
-       public SquareTurtle(double n)
+       public PolygonTurtle(double n, int s)
       {
-         super();
          mySize = n;
+         mySides = s;
       }
-       public SquareTurtle(double x, double y, double h)
-      {
-         super(x, y, h);
-         mySize = 50.0;
-      }
-       public SquareTurtle(double x, double y, double h, double n)
+       public PolygonTurtle(double x, double y, double h, double n, int s)
       {
          super(x, y, h);
          mySize = n;
+         mySides = s;
       }
-   
-   	//************************methods*****************************
        public void setSize(double n)
       {
          mySize = n;
+      }
+       public void setSides(int s)
+      {
+         mySides = s;
       }
        public void drawShape()
       {

@@ -1,5 +1,6 @@
-	//Name______________________________ Date_____________
-   import edu.fcps.Turtle;
+package Lab06_7_8_9.Lab07;    //Name______________________________ Date_____________
+   import Lab06_7_8_9.Lab06.TurtlePanel;
+
    import java.awt.Color;
    import javax.swing.*;
    public class Driver07
