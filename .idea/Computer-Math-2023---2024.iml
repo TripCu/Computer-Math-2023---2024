@@ -3,9 +3,27 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/shells" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shells/Units/Unit2" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/PixLab_student" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit1" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Graphics Project 2023" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab00" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab01" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab03" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab04" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab05" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab06_7_8_9" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab10" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab11" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab12" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab13" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab14" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab15" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab16" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab17" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab18" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab19" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab20" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
