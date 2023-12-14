@@ -1,4 +1,4 @@
-package Lab06_7_8_9.Lab07;    //Name______________________________ Date_____________
+	//Name______________________________ Date_____________
    import edu.fcps.Turtle;
     public class PolygonTurtle extends Turtle
    {

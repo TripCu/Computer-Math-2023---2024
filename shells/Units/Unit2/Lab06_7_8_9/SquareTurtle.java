@@ -1,9 +1,9 @@
-package Lab06_7_8_9.Lab06;    //Name______________________________ Date_____________
+	//Name______________________________ Date_____________
    import edu.fcps.Turtle;
     public class SquareTurtle extends Turtle
    {
       private double mySize;
-
+   
    	//*************************constructors*************************
        public SquareTurtle()
       {
@@ -33,11 +33,12 @@ package Lab06_7_8_9.Lab06;    //Name______________________________ Date_________
       }
        public void drawShape()
       {
-          for(int i = 1; i <= 4; i++)
-          {
-              forward(mySize);
-              turnLeft(90.0);
-
-          }
+      
+         /************************/
+      	/*                      */
+      	/* Your code goes here. */
+      	/*                      */
+      	/************************/
+      
       }
    }
