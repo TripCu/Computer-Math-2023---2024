@@ -1,0 +1,24 @@
+create a frame that is 500 by 600
+
+create and integer list that is xpoints and ypoint
+polygon points
+first list {250, 150, 350}
+ 	   {150, 400, 400}
+
+
+second list {250, 135, 365}
+           {200, 450, 450}
+
+third list {250, 100, 400}
+            {300, 500, 500}
+
+trunk is {225, 500, 50, 100}
+
+
+ovals        (240, 200, 25, 25)
+        (215, 300, 25, 25)
+        (275, 380, 25, 25)
+        (200, 455, 25, 25)
+        (330, 455, 25, 25)
+
+prottected void for paintcompent 

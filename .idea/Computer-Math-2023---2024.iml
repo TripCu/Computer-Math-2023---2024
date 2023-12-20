@@ -25,6 +25,7 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab19" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab20" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab02" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab06_7_8_9" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -32,5 +33,6 @@
     <orderEntry type="library" name="karel2_c" level="project" />
     <orderEntry type="library" name="xercesImpl" level="project" />
     <orderEntry type="library" name="karel2_c" level="project" />
+    <orderEntry type="library" name="javafx-sdk-21.0" level="project" />
   </component>
 </module>
