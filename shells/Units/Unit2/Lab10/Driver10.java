@@ -7,7 +7,7 @@ package Lab10;   //Torbert, e-mail: smtorbert@fcps.edu
        public static void main(String[] args)
       { 
          JFrame frame = new JFrame("Unit2, Lab10: Polka Dots");
-         frame.setSize(400, 400);
+         frame.setSize(800, 800);
          frame.setLocation(0, 0);
          frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        	frame.setContentPane(new PolkaDotPanel());

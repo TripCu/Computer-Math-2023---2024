@@ -34,16 +34,16 @@ package Lab10;// Billington.  email: mlbillington@fcps.edu
          return myX;
       }
       public double getY()      
-      { 
-         //_______________
+      {
+          return myY;
       }
       public double getDiameter() 
       { 
-         //_______________
+         return myDiameter;
       }
       public Color getColor() 
       { 
-         //_______________
+         return myColor;
       }
       public double getRadius() 
       { 
@@ -54,9 +54,9 @@ package Lab10;// Billington.  email: mlbillington@fcps.edu
       {
          myX = x;
       } 
-      public void setY(/*_________*/)
+      public void setY(double y)
       {
-         //_______________
+         myY = y;
       } 
       public void setColor(Color c)
       {
