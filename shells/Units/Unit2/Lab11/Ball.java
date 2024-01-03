@@ -1,4 +1,4 @@
-//Name:              Date:
+package Lab11;//Name:              Date:
    import java.awt.*;
     public class Ball extends Polkadot
    {
@@ -8,8 +8,8 @@
        public Ball()         //default constructor
       {
          super(200, 200, 50, Color.BLACK);
-         dx = Math.random() * 12 - 6;          // to move vertically
-         dy = Math.random() * 12 - 6;          // to move sideways
+         dx = Math.random() * 12 - 6;          // to move horizontally
+         dy = Math.random() * 12 - 6;          // to move vertically
       }
        public Ball(double x, double y, double dia, Color c)
       {
@@ -41,14 +41,33 @@
      //instance methods
        public void move(double rightEdge, double bottomEdge)
       {
-         setX(getX()+ dx);                  // move horizontally
-        
-         if(getX() >= rightEdge - getRadius())  //hit right edge
-         {
-            setX(rightEdge - getRadius());
-            dx = dx * -1; 
-         }
-        /* more code goes here  */
-         
+          setX(getX()+ dx);                  // move horizontally
+          setY(getY()+ dy);                  // move horizontally
+
+          if(getX() >= rightEdge - getRadius())  //hit right edge
+          {
+              setX(rightEdge - getRadius());
+              dx = dx * -1;
+          }
+
+          if(getX() <= 0 + getRadius())  //hit  Left edge
+          {
+              setX(0 + getRadius());
+              dx = dx * -1;
+          }
+          /* more code goes here  */
+          if(getY() <= 0 + getRadius())  //hit  top edge
+          {
+              setY(0 + getRadius());
+              dy = dy * -1;
+          }
+
+          if(getY() >= rightEdge - getRadius())  //hit bottom edge
+          {
+              setY(rightEdge - getRadius());
+              dy = dy * -1;
+          }
+
+
       }
    }
