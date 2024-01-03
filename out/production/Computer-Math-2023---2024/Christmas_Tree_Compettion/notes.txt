@@ -1,3 +1,4 @@
+
 create a frame that is 500 by 600
 
 create and integer list that is xpoints and ypoint
