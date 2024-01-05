@@ -10,7 +10,7 @@ package Lab10;   //Torbert, e-mail: smtorbert@fcps.edu
          frame.setSize(800, 800);
          frame.setLocation(0, 0);
          frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-       	frame.setContentPane(new PolkaDotPanel());
+       	 frame.setContentPane(new PolkaDotPanel());
          frame.setVisible(true);
       }
    }
