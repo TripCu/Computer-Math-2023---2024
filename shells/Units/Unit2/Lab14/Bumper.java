@@ -1,4 +1,4 @@
-// Name: 				Date:
+package Lab14;// Name: 				Date:
 
    import java.awt.*;
    
@@ -19,9 +19,9 @@
       
       }
       
-     // accessor methods  (one for each field)
+     //(getters) accessor methods  (one for each field)
    
-     // modifier methods  (one for each field)
+     //(setters) modifier methods  (one for each field)
    
      // instance methods
      // chooses a random (x,y) location.  Bumper stays entirely in the window.

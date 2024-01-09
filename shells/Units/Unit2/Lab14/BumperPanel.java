@@ -1,4 +1,4 @@
-	// Phil Ero 15JUL08
+package Lab14;    // Phil Ero 15JUL08
 	
    import javax.swing.*;
    import java.awt.*;

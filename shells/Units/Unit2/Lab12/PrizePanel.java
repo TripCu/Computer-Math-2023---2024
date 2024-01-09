@@ -54,9 +54,12 @@ package Lab12;
 
        private void collide(Ball b, Polkadot pd)
       {
-        //double d = distance(  /* 4 arguments */  );
-		
-		  
+        double d = distance(b.getX(), b.getY(), pd.getX(), pd.getY());
+        if( d < b.getRadius() + pd.getRadius())
+          {
+            hits++;
+            pd.jump(FRAME,FRAME);
+          }
       }
        private double distance(double x1, double y1, double x2, double y2)
       {
