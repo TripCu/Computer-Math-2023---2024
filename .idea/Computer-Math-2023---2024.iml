@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/shells/Units/Setup files" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/shells/Units/Unit2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shells/Units/Euler Problems" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/PixLab_student" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit1" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Graphics Project 2023" />
@@ -27,6 +28,7 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab11" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab12" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab14" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab16" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
