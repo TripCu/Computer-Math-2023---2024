@@ -14,7 +14,6 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab03" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab04" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab05" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab13" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab15" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab17" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab18" />
@@ -25,10 +24,6 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Discared" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Christmas_Tree_Compettion" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab10" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab11" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab12" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab14" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab16" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
