@@ -1,8 +1,4 @@
 package Lab14;//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;

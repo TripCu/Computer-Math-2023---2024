@@ -1,7 +1,4 @@
 package Lab14;//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
 
 public class BumperCollision {
    private static double nearestX;
