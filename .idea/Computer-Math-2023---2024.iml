@@ -24,10 +24,10 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab12" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab13" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab14" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab16" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab02" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab01" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab03" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab04" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
