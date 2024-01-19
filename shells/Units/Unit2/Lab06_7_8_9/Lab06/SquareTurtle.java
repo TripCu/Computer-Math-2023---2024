@@ -9,7 +9,7 @@ public class SquareTurtle extends Turtle {
     private double mySize;
 
     public SquareTurtle() {
-        this.mySize = 50.0;
+        this.mySize = 10.0;
     }
 
     public SquareTurtle(double n) {

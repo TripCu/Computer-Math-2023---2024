@@ -16,9 +16,9 @@ public class Driver06 {
         frame.setContentPane(new TurtlePanel());
         frame.setVisible(true);
         SquareTurtle smidge = new SquareTurtle();
-        SquareTurtle pete = new SquareTurtle(100.0);
-        SquareTurtle lisa = new SquareTurtle(600.0, 200.0, 135.0);
-        SquareTurtle mary = new SquareTurtle(100.0, 300.0, 45.0, 25.0);
+        SquareTurtle pete = new SquareTurtle(45.0);
+        SquareTurtle lisa = new SquareTurtle(555.0, 50.0, 135.0);
+        SquareTurtle mary = new SquareTurtle(150.0, 125.0, 45.0, 25.0);
         Turtle.setCrawl(true);
         smidge.setColor(Color.BLUE);
         lisa.setColor(Color.RED.darker());
