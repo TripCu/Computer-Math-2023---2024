@@ -1,5 +1,4 @@
-package Lab06_7_8_9.Lab08;//
-
+package Lab06_7_8_9.Lab08;
 import edu.fcps.Turtle;
 import java.awt.Color;
 

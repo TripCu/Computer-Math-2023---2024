@@ -1,4 +1,4 @@
-package Lab06_7_8_9.Lab08;    //Name______________________________ Date_____________
+package Lab06_7_8_9.Lab08;
    import edu.fcps.Turtle;
    import java.awt.Color;
    import javax.swing.*;
@@ -14,7 +14,6 @@ package Lab06_7_8_9.Lab08;    //Name______________________________ Date_________
          frame.setDefaultCloseOperation(3);
          frame.setContentPane(new TurtlePanel());
          frame.setVisible(true);
-         Turtle.setCrawl(false);
          Turtle.clear(Color.WHITE);
          FlowerTurtle smidge = new FlowerTurtle(60.0, 50.0, Color.PINK);
          FlowerTurtle lisa = new FlowerTurtle(175.0, 50.0, Color.BLACK);

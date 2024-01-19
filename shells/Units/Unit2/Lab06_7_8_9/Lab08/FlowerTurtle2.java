@@ -1,8 +1,4 @@
-package Lab06_7_8_9.Lab08;//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
+package Lab06_7_8_9.Lab08;
 import edu.fcps.Turtle;
 import java.awt.Color;
 
