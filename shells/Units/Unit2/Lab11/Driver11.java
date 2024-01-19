@@ -1,7 +1,7 @@
 package Lab11;   //Torbert, e-mail: smtorbert@fcps.edu
 	//version 6.17.2003
 
-import Lab10.PolkaDotPanel;
+
 
 import javax.swing.*;
 

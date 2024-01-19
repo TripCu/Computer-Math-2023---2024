@@ -1,3 +1,5 @@
+package Lab01;
+
 import javax.swing.*;
 
 public class FancyHouseDriver {

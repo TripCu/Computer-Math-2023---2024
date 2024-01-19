@@ -1,3 +1,4 @@
+package Lab01;
 
 import javax.swing.JFrame;
 

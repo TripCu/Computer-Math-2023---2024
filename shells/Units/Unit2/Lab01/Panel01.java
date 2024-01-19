@@ -1,3 +1,5 @@
+package Lab01;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
