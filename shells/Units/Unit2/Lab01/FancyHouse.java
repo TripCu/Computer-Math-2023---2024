@@ -1,9 +1,6 @@
 package Lab01;
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +8,8 @@ import java.util.List;
 public class FancyHouse extends JFrame {
     private int xPosition = 0;
     private Color houseColor;
-    private List<Point> cloudPositions;
+    private final List<Point> cloudPositions;
+    private final List<Point> cloudVelocities;
 
     public FancyHouse() {
         setTitle("Fancy Side-Scrolling House");
@@ -24,19 +22,38 @@ public class FancyHouse extends JFrame {
         cloudPositions.add(new Point(300, 100));
         cloudPositions.add(new Point(500, 30));
 
-        Timer timer = new Timer(1, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                xPosition += 1;
-                if (xPosition > getWidth()) {
-                    xPosition = -200;
-                    houseColor = getRandomColor();
-                }
-                repaint();
+        cloudVelocities = new ArrayList<>();
+        cloudVelocities.add(new Point(2, 0));  // Initial cloud velocity
+        cloudVelocities.add(new Point(1, 0));
+        cloudVelocities.add(new Point(3, 0));
+
+        // House timer
+        Timer houseTimer = new Timer(1, e -> {
+            xPosition += 1;
+            if (xPosition > getWidth()) {
+                xPosition = -200;
+                houseColor = getRandomColor();
             }
+            repaint();
         });
 
-        timer.start();
+        // Clouds timer
+        // Clouds timer
+        Timer cloudTimer = new Timer(10, e -> {
+            for (int i = 0; i < cloudPositions.size(); i++) {
+                Point cloudPosition = cloudPositions.get(i);
+                Point cloudVelocity = cloudVelocities.get(i);
+
+                cloudPosition.x += cloudVelocity.x;
+                if (cloudPosition.x > getWidth() + 100) {
+                    cloudPosition.x = -100;
+                }
+            }
+            repaint();
+        });
+
+        houseTimer.start();
+        cloudTimer.start();
     }
 
     @Override
@@ -53,12 +70,13 @@ public class FancyHouse extends JFrame {
 
         // Draw clouds
         for (Point cloudPosition : cloudPositions) {
-            drawCloud(g2d, xPosition + cloudPosition.x, cloudPosition.y);
+            drawCloud(g2d, cloudPosition.x, cloudPosition.y);
         }
 
         // Draw ground
         g2d.setColor(new Color(34, 139, 34)); // Forest green color
         g2d.fillRect(0, getHeight() - 50, getWidth(), 50);
+
 
         // Draw house
         g2d.setColor(houseColor);
@@ -81,6 +99,7 @@ public class FancyHouse extends JFrame {
         // Draw the buffered image onto the screen
         g.drawImage(buffer, 0, 0, this);
     }
+
 
     private void drawCloud(Graphics g, int x, int y) {
         g.setColor(Color.WHITE);
