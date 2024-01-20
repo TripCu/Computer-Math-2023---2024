@@ -1,7 +1,4 @@
-package Lab06_7_8_9.Lab06;//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
+package Lab06_7_8_9.Lab06;
 
 import edu.fcps.Turtle;
 
