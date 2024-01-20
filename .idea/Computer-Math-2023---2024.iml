@@ -26,6 +26,9 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab03" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab04" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab06_7_8_9" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab02" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab05" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab16" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
