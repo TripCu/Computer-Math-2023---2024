@@ -10,7 +10,6 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit1" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Graphics Project 2023" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab00" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab05" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab15" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab17" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab18" />
@@ -23,10 +22,10 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab12" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab13" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab14" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab02" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab01" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab03" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab04" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Lab06_7_8_9" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -2,10 +2,10 @@ package Lab02;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.ImageObserver;
 
 public class Panel02 extends JPanel {
-
+    public Panel02() {
+    }
 
     public void paintComponent(Graphics g) {
         g.setColor(Color.RED.darker());
@@ -32,7 +32,7 @@ public class Panel02 extends JPanel {
         }
 
         ImageIcon i = new ImageIcon("tj.jpg");
-        g.drawImage(i.getImage(), 150, 75, 110, 150, (ImageObserver)null);
+        g.drawImage(i.getImage(), 150, 75, 110, 150, null);
         g.setFont(new Font("Serif", Font.BOLD | Font.ITALIC, 30));
         g.setColor(Color.WHITE);
         g.drawString("Our Fearless Leader", 75, 300);
