@@ -1,7 +1,4 @@
-package Lab06_7_8_9.Lab06;//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
+package Lab06_7_8_9.Lab06;
 
 import edu.fcps.Turtle;
 
@@ -9,7 +6,7 @@ public class SquareTurtle extends Turtle {
     private double mySize;
 
     public SquareTurtle() {
-        this.mySize = 50.0;
+        this.mySize = 10.0;
     }
 
     public SquareTurtle(double n) {

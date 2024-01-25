@@ -1,3 +1,5 @@
+package Lab00;
+
 import javax.swing.*;
 import java.awt.*;
 public class Panel00 extends JPanel

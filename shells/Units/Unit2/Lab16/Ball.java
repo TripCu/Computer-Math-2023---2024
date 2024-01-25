@@ -1,7 +1,4 @@
 package Lab16;
-
-import Lab11.Polkadot;
-
 import java.awt.*;
 
 public class Ball extends Polkadot

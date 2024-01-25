@@ -1,3 +1,5 @@
+package Lab00;
+
 import javax.swing.JFrame;
 public class Driver00
 {

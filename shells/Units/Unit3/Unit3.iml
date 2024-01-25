@@ -16,7 +16,11 @@
       <excludeFolder url="file://$MODULE_DIR$/Lab13" />
       <excludeFolder url="file://$MODULE_DIR$/Lab15" />
       <excludeFolder url="file://$MODULE_DIR$/Lab16" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab00" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab17" />
     </content>
+    <content url="file://$MODULE_DIR$/Lab00" />
+    <content url="file://$MODULE_DIR$/Lab17" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
