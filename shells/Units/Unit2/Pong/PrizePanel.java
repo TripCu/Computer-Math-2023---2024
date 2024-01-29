@@ -11,7 +11,6 @@ import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import javax.swing.JPanel;
 import javax.swing.Timer;
-
 public class PrizePanel extends JPanel {
     private static final int FRAME_WIDTH = 400;
     private static final Color BACKGROUND = new Color(204, 204, 204);

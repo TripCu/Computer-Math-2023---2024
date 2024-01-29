@@ -1,17 +1,17 @@
-package Lab14;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
+package Pong;//
+
+
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
-import javax.swing.JPanel;
-import javax.swing.Timer;
 
 public class BumperPanel extends JPanel {
    private static final int FRAME = 400;
-   private static final Color BACKGROUND = new Color(204, 204, 204);
+   private static final Color BACKGROUND = new Color(0, 0, 0);
    private static final Color BALL_COLOR;
    private static final Color PRIZE_COLOR;
    private static final Color BUMPER_COLOR;
@@ -31,7 +31,7 @@ public class BumperPanel extends JPanel {
       this.myBuffer = this.myImage.getGraphics();
       this.ball = new Ball(0.0, 0.0, 50.0, BALL_COLOR);
       this.ball.jump(400, 400);
-      this.prize = new Ball(0.0, 0.0, 25.0, PRIZE_COLOR);
+      this.ball = new Ball(0.0, 0.0, 25.0, PRIZE_COLOR);
       this.prize.jump(400, 400);
       this.bumper = new Bumper(100, 100, 75, 125, BUMPER_COLOR);
       this.bumper.jump(400, 400);
@@ -53,7 +53,7 @@ public class BumperPanel extends JPanel {
       g.drawImage(this.myImage, 0, 0, this.getWidth(), this.getHeight(), (ImageObserver)null);
    }
 
-   public void collide(Ball b, Ball p) {
+   public void collide(Lab14.Ball b, Lab14.Ball p) {
       double dist = this.distance(b.getX(), b.getY(), p.getX(), p.getY());
       if (dist < p.getRadius() + b.getRadius()) {
          ++this.hits;
