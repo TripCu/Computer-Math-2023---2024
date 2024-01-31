@@ -122,7 +122,7 @@ public class PongGame extends JPanel implements MouseMotionListener {
             pcGotToTarget = false;
             bounceCount++;
             if ((int) (Math.random() * 3) == 0) {
-                pcAccidentalMiss = true;
+                pcAccidentalMiss = false;
             }
         }
 
