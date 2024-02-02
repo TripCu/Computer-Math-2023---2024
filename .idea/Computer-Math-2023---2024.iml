@@ -36,6 +36,6 @@
     <orderEntry type="library" name="karel2_c" level="project" />
     <orderEntry type="library" name="xercesImpl" level="project" />
     <orderEntry type="library" name="karel2_c" level="project" />
-    <orderEntry type="library" name="javafx-sdk-21.0" level="project" />
+    <orderEntry type="library" name="acm" level="project" />
   </component>
 </module>
