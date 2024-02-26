@@ -27,6 +27,7 @@ public class Paddle {
         //set brush color to whatever this paddle's color is
         g.setColor(color);
         //paint the rectangle, starting in the upper left corner at x, y
+        //paint the rectangle, starting in the upper left corner at x, y
         g.fillRect(x, y, PADDLE_WIDTH, height);
 
     }
