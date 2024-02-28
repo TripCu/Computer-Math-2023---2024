@@ -10,7 +10,7 @@
          frame.setSize(125, 125);
          frame.setLocation(200, 100);
          frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-         frame.setContentPane(new Panel04());
+         //frame.setContentPane(new Panel04());
          frame.setVisible(true);
       }
    }
