@@ -1,18 +1,16 @@
 package Lab00;
-   import javax.swing.JFrame;
-    public class Driver00
-    {
-        public static void main(String[] args)
-        {
-            JFrame frame = new JFrame("Unit2, Lab17");
-            frame.setSize(408, 438);    //makes the mouse location correct
-            frame.setLocation(0, 0);
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            Panel00 p = new Panel00();
-            frame.setContentPane(p);
-            p.requestFocus();
-            frame.setVisible(true);
+import javax.swing.JFrame;
 
-        }
+public class Driver00 {
+    public Driver00() {
     }
 
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Hello Button");
+        frame.setSize(200, 120);
+        frame.setLocation(200, 100);
+        frame.setDefaultCloseOperation(3);
+        frame.setContentPane(new Panel00());
+        frame.setVisible(true);
+    }
+}
