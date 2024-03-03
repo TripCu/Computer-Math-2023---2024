@@ -31,7 +31,6 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Euler Problems" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2/Pong" />
-      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab01" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab02" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab03" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab04" />
@@ -48,6 +47,7 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab15" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab16" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab17" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab00" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

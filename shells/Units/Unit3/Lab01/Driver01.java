@@ -1,6 +1,6 @@
 package Lab01;
 
-import Lab00.Panel00;
+
 import javax.swing.*;
 
 public class Driver01 {
@@ -12,7 +12,7 @@ public class Driver01 {
         frame.setSize(200, 120);
         frame.setLocation(200, 100);
         frame.setDefaultCloseOperation(3);
-        frame.setContentPane(new Panel00());
+        frame.setContentPane(new Panel01());
         frame.setVisible(true);
     }
 }
