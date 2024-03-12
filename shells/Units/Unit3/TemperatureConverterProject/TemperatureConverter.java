@@ -14,9 +14,8 @@ public class TemperatureConverter extends JFrame {
     private JButton fToCButton;
     private JButton cToKButton;
     private JButton kToCButton;
-    private JTextArea resultArea;
+    private JTextField resultArea;
 
-    // Constructor to setup the GUI
     public TemperatureConverter() {
         setTitle("Temperature Converter");
         setBounds(300, 90, 350, 300);
@@ -61,13 +60,15 @@ public class TemperatureConverter extends JFrame {
         kToCButton.setLocation(120, 130);
         c.add(kToCButton);
 
-        resultArea = new JTextArea();
+        resultArea = new JTextField();
         resultArea.setSize(200, 50);
         resultArea.setLocation(50, 170);
         resultArea.setEditable(false);
-        c.add(resultArea);
+        resultArea.setHorizontalAlignment(JTextField.CENTER); // This centers the text
+        resultArea.setFont(new Font(resultArea.getFont().getName(), resultArea.getFont().getStyle() | Font.BOLD, 16));
+        c.add(resultArea);;
 
-        // Action listener for C to F button
+
         cToFButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String input = inputTextField.getText();
@@ -124,8 +125,4 @@ public class TemperatureConverter extends JFrame {
         });
     }
 
-    public static void main(String[] args) {
-        TemperatureConverter frame = new TemperatureConverter();
-        frame.setVisible(true);
-    }
 }

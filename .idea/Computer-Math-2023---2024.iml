@@ -45,6 +45,11 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab16" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab17" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab00" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/copilot/chatSessions" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab01" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab02" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab03" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab04" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
