@@ -3,9 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Computer-Math-2023---2024.iml" filepath="$PROJECT_DIR$/.idea/Computer-Math-2023---2024.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shells/Units/Unit4/Unit4.iml" filepath="$PROJECT_DIR$/shells/Units/Unit4/Unit4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shells/Units/Unit5/Unit5.iml" filepath="$PROJECT_DIR$/shells/Units/Unit5/Unit5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shells/Units/Units.iml" filepath="$PROJECT_DIR$/shells/Units/Units.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-	//Name______________________________ Date_____________
+package Lab05;    //Name______________________________ Date_____________
    import javax.swing.*;
    import java.awt.*;
    import java.awt.event.*;
