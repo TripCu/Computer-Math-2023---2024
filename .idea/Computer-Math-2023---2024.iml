@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/shells/Units/Setup files" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/shells/Units/Unit3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/shells/Units" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab06/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit1" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit2" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab06" />
@@ -28,6 +29,7 @@
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit5" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/TemperatureConverterProject" />
       <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab03" />
+      <excludeFolder url="file://$MODULE_DIR$/shells/Units/Unit3/Lab05" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
